@@ -29,6 +29,7 @@
 html,
 body {
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -1027,4 +1028,32 @@ color: var(--color-primary);
     font-size: 14px;
     line-height: 17px;
     color: var(--color-secondary);
+}
+
+/* arrow-up */
+.arrow-up{
+    position: fixed;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 50px;
+    background: var(--bg-dark);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.arrow-up.active{
+    opacity: 1;
+    z-index: 3;
+}
+
+.arrow-up svg{
+    fill: var(--color-white);
+    width: 30px;
+
 }

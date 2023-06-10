@@ -116,4 +116,18 @@ $(document).ready(function () {
         $(".nav").toggleClass("active")
         $("body").toggleClass("active")
     });
+
+    // arrow up
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 200){
+            $(".arrow-up").addClass("active")
+        } else{
+            $(".arrow-up").removeClass("active")
+        }
+    })
+    $(".arrow-up").click(function(e){
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1500)
+    })
 });

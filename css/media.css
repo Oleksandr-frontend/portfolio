@@ -51,6 +51,10 @@
         height: 100vh;
     }
 
+    .menu a {
+        font-size: 19px;
+    }
+
     .experieces-wrapper {
         flex-wrap: wrap;
         gap: 80px;
