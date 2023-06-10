@@ -1,0 +1,114 @@
+@media(max-width:1250px){
+    .container{
+        padding: 0 10px;
+    }
+
+    .nav {
+        position: absolute;
+        z-index: 2;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: var(--bg-white);
+        overflow-x: hidden;
+        transition: .4s linear;
+        transform: translateX(100%);
+    }
+
+    .nav.active{
+        transform: translateX(0);
+    }
+
+    .dark .menu a{
+        color: var(--color-primary);
+    }
+
+    .burger{
+        display: block;
+        width: 60px;
+        height: 40px;
+        position: relative;
+        z-index: 5;
+        transition: .3s linear;
+        background: url(../img/burger.svg) no-repeat center;
+    }
+
+    .burger.active,
+    .dark .burger.active{
+        background: url(../img/xmark-solid.svg) no-repeat center;
+    }
+
+    .dark .burger{
+        background: url(../img/burger-white.svg) no-repeat center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .experieces-wrapper {
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+}
+@media(max-width:1000px){
+    .hero-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+
+}
+@media(max-width:768px){}
+@media(max-width:590px){
+    .portfolios-button {
+        margin-right: 0;
+    }
+
+    .portfolios-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .skills-wrapper {
+        gap: 70px;
+    }
+}
+@media(max-width:450px){
+    
+}
+@media(max-width:390px){
+    .resume {
+        width: 90px;
+        padding: 10px 0px;
+    }
+
+    .switch {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-fixed {
+        padding: 60px 0 10px 0;
+    }
+
+    .services-block {
+        padding: 25px 20px;
+    }
+
+    .portfolios-block {
+        width: 100%;
+    }
+}
