@@ -117,6 +117,17 @@ $(document).ready(function () {
         $("body").toggleClass("active")
     });
 
+    if(window.matchMedia('(max-width: 1250px)').matches){
+        console.log("width < 1250");
+        $(".menu a").click(function () { 
+            $(".burger").removeClass("active")
+            $(".nav").removeClass("active")
+            $("body").removeClass("active")
+        });
+    }
+
+    
+
     // arrow up
     $(window).scroll(function(){
         if($(window).scrollTop() > 200){
